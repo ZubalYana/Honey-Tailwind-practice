@@ -13,6 +13,13 @@ import thirdScreenIllustration from '/third screen illustration.png'
 import ProductCard from './components/ProductCard/ProductCard'
 import ourProduct1 from '/our product 1.png'
 import ourProduct2 from '/our product 2.png'
+import darkLogo from '/darkLogo.svg'
+import facebookIcon from '/facebook.svg'
+import twitterIcon from '/twitter.svg'
+import googleIcon from '/google.svg'
+import pinterestIcon from '/pinterest.svg'
+import playMarket from '/playMarket.png'
+import appStore from '/appStore.png'
 
 export default function App() {
   let products = [
@@ -110,7 +117,19 @@ export default function App() {
      {/* our product page end */}
 
      {/* futer start */}
-     <section className='futer w-full h-[25vh] py-12 px-56 relative bg-gradient-to-tr from-honeyStart to-honeyEnd'>
+     <section className='futer w-full h-[25vh] py-12 px-56 relative bg-gradient-to-tr from-honeyStart to-honeyEnd flex justify-between items-center'>
+      <img src={darkLogo} alt="futer logo" />
+      <p className='font-light text-sm text-black w-[300px]'>Honey is one of the prime ingredients in your everyday food schedule.</p>
+      <div className="mediaIconsCon w-[180px] flex justify-between">
+        <img src={facebookIcon} alt="facebook" />
+        <img src={twitterIcon} alt="facebook" />
+        <img src={googleIcon} alt="facebook" />
+        <img src={pinterestIcon} alt="facebook" />
+      </div>
+      <div className=" w-[300px] flex justify-between">
+        <img src={playMarket} alt="Play Market" className='h-[41px]' />
+        <img src={appStore} alt="Play Market" className='h-[41px]' />
+      </div>
      </section>
      {/* futer end */}
      </div>
