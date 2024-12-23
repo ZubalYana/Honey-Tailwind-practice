@@ -13,6 +13,9 @@ export default function App() {
           <li className='font-light cursor-pointer'>Contact</li>
         </ul>
       </header>
+      <section className='mainPage w-full h-[78vh] px-12'>
+        <div className="mainPage_banner w-full h-full bg-gradient-to-tr from-honeyStart to-honeyEnd rounded-3xl"></div>
+      </section>
      </div>
     </>
   )
