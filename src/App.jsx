@@ -10,7 +10,16 @@ import shopLogo3 from '/shopLogo3.svg'
 import shopLogo4 from '/shopLogo4.svg'
 import secondScreenIllustration from '/second screen illustration.png'
 import thirdScreenIllustration from '/third screen illustration.png'
+import ProductCard from './components/ProductCard/ProductCard'
+import ourProduct1 from '/our product 1.png'
+import ourProduct2 from '/our product 2.png'
+
 export default function App() {
+  let products = [
+    { name: 'Eucalyptus Honey', description: 'It has the scent of lavender, medium sweetness lavender scented, and has a medium amber color.', img: ourProduct1 },
+    { name: 'Basswood Honey', description: 'Basswood is a tree native and abundant in Wisconsin, which is also known as the Linden tree.', img: ourProduct2 },
+  ];
+  
   return (
     <>
      <div className="wrap w-full">
@@ -83,6 +92,27 @@ export default function App() {
       </section>
      {/* honey taste page end */}
 
+     {/* our product page start */}
+      <section className='ourProductPage w-full h-[70vh] py-12 px-56 relative'>
+        <h3 className='text-3xl font-semibold text-black my-6'>Our Product</h3>
+        <p className='w-full flex justify-end text-darkOrange font-semibold cursor-pointer underline my-2'>See all</p>
+        <div className="productsContainer flex justify-between">
+          {products.map((product, index) => (
+            <ProductCard
+              key={index}
+              name={product.name}
+              description={product.description}
+              img={product.img}
+           />
+          ))}
+        </div>
+      </section>
+     {/* our product page end */}
+
+     {/* futer start */}
+     <section className='futer w-full h-[25vh] py-12 px-56 relative bg-gradient-to-tr from-honeyStart to-honeyEnd'>
+     </section>
+     {/* futer end */}
      </div>
     </>
   )
