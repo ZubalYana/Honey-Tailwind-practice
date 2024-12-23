@@ -1,5 +1,6 @@
 import './App.css'
 import logo from '/logo.svg'
+import Header from './components/Header/Header'
 import honeySpoon from '/honey spoon.png'
 import bannerHoney from '/banner honey.png'
 import bee from '/bee.png'
@@ -7,15 +8,7 @@ export default function App() {
   return (
     <>
      <div className="wrap w-full">
-      <header className='w-full flex items-center justify-between px-12 py-8'>
-        <img src={logo} alt="honey" />
-        <ul className='w-[415px] flex justify-between items-center'>
-          <li className='font-bold cursor-pointer'>Home</li>
-          <li className='font-light cursor-pointer'>About</li>
-          <li className='font-light cursor-pointer'>Our Product</li>
-          <li className='font-light cursor-pointer'>Contact</li>
-        </ul>
-      </header>
+     <Header />
       <section className='mainPage w-full h-[78vh] px-12 relative'>
         <img src={honeySpoon} alt="honey spoon" className='w-[150px] absolute top-[10px] left-[-20px]' />
         <div className="mainPage_banner w-full h-full bg-gradient-to-tr from-honeyStart to-honeyEnd rounded-3xl flex items-center justify-center">
