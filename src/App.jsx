@@ -2,6 +2,7 @@ import './App.css'
 import logo from '/logo.svg'
 import honeySpoon from '/honey spoon.png'
 import bannerHoney from '/banner honey.png'
+import bee from '/bee.png'
 export default function App() {
   return (
     <>
@@ -19,15 +20,21 @@ export default function App() {
         <img src={honeySpoon} alt="honey spoon" className='w-[150px] absolute top-[10px] left-[-20px]' />
         <div className="mainPage_banner w-full h-full bg-gradient-to-tr from-honeyStart to-honeyEnd rounded-3xl flex items-center justify-center">
           <img src={logo} alt="honey" className='w-[65%] absolute z-10' />
-          <div className="banner_infoContent z-20">
-            <div className="titleContainer font-bold text-7xl">
+          <div className="banner_infoContent z-20 w-[60%] p-14 flex justify-center items-center">
+            <div className="titleContainer font-semibold text-7xl w-[70%] h-[280px] flex flex-col justify-between">
               <div className="titleWord">Finger</div>
-              <div className="titleWord">licking</div>
-              <div className="titleWord">honey!</div>
+              <div className="titleWord mx-36">licking</div>
+              <div className="titleWord flex items-end">
+                <div className="beeContainer ">
+                  <img src={bee} alt="bee" className='w-[120px]' />
+                  <div className="beeUnderline w-[200px] h-[2px] bg-black"></div>
+                </div>
+                <p className='mx-8'>honey!</p>
+                </div>
             </div>
           </div>
-          <div className="banner_imgContainer">
-            <img src={bannerHoney} alt="honey" className='w-[50%]' />
+          <div className="banner_imgContainer w-[40%] z-20">
+            <img src={bannerHoney} alt="honey" className='w-[90%]' />
           </div>
         </div>
       </section>
