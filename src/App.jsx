@@ -8,6 +8,8 @@ import shopLogo1 from '/shopLogo1.svg'
 import shopLogo2 from '/shopLogo2.svg'
 import shopLogo3 from '/shopLogo3.svg'
 import shopLogo4 from '/shopLogo4.svg'
+import secondScreenIllustration from '/second screen illustration.png'
+import thirdScreenIllustration from '/third screen illustration.png'
 export default function App() {
   return (
     <>
@@ -44,7 +46,7 @@ export default function App() {
      {/* main page end */}
 
      {/* trusted shops page start */}
-      <section className='trustedShopsPage w-full h-[45vh] py-12 px-56 relative'>
+      <section className='trustedShopsPage w-full h-[38vh] py-12 px-56 relative'>
         <h3 className='text-3xl font-semibold text-black my-9'>Our Trusted Shops</h3>
         <div className="shopLogosCon flex justify-between items-center">
           <img src={shopLogo1} alt="shop logo 1" />
@@ -54,6 +56,32 @@ export default function App() {
         </div>
       </section>
      {/* trusted shops page end */}
+
+     {/* honey created page start */}
+      <section className='honeyCreatedPage w-full h-[90vh] p-12 relative flex justify-center'>
+        <div className="honeyImgCon w-[50%]">
+          <img src={secondScreenIllustration} alt="second screen illustration" className='w-[600px]' />
+        </div>
+        <div className="honeyInfoCon w-[40%] h-full flex flex-col justify-center">
+          <h3 className='text-3xl font-semibold text-black w-[380px]'>Honey created in the laps of nature.</h3>
+          <p className='my-5 w-[470px]'>Honey is one of the prime ingredients in your everyday food schedule. As a brand, you need a marketing strategy that will help...</p>
+          <button className='w-[184px] h-[60px] bg-darkOrange text-white font-medium focus:outline-none hover:bg-transparent hover:text-darkOrange hover:border-2 hover:border-darkOrange transition-all duration-300 my-6'>Learn More</button>
+        </div>
+      </section>
+     {/* honey created page end */}
+
+     {/* honey taste page start */}
+     <section className='honeyCreatedPage w-full h-[90vh] p-12 relative flex justify-center'>
+        <div className="honeyInfoCon w-[40%] h-full flex flex-col justify-center">
+          <h3 className='text-3xl font-semibold text-black w-[380px]'>Does your honey taste bad? Try us!</h3>
+          <p className='my-5 w-[470px]'>Honey is one of the prime ingredients in your everyday food schedule. As a brand, you need a marketing strategy that will help...</p>
+          <button className='w-[184px] h-[60px] bg-darkOrange text-white font-medium focus:outline-none hover:bg-transparent hover:text-darkOrange hover:border-2 hover:border-darkOrange transition-all duration-300 my-6'>Learn More</button>
+        </div>
+        <div className="honeyImgCon w-[42%]">
+          <img src={thirdScreenIllustration} alt="second screen illustration" className='w-[600px]' />
+        </div>
+      </section>
+     {/* honey taste page end */}
 
      </div>
     </>

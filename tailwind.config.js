@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'honey': '#FFA638',
+        'darkOrange': '#E58311',
       },
       gradientColorStops: {
         honeyStart: '#FF9D2D', 
