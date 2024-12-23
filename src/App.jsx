@@ -26,8 +26,8 @@ export default function App() {
                 </div>
             </div>
             <div className="buttonsContainer w-[360px] flex justify-between">
-              <button className='w-[170px] h-[50px] bg-black text-white font-medium'>Buy Now</button>
-              <button className='w-[170px] h-[50px] text-black border-2 border-black font-medium'>Learn More</button>
+              <button className="w-[170px] h-[50px] bg-black text-white font-medium focus:outline-none hover:bg-transparent hover:text-black hover:border-2 hover:border-black transition-all duration-500">Buy Now</button>
+              <button className='w-[170px] h-[50px] text-black border-2 border-black font-medium hover:bg-black hover:text-white transition-all duration-500'>Learn More</button>
             </div>
           </div>
           <div className="banner_imgContainer w-[40%] z-20">
